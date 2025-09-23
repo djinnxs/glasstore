@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__logo">
+        <a href="../index.html">GlasStore</a>
+      </p>
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="seccion-contacto">
+        <h1 class="titulo-contacto">Contacto</h1>
+        <form
+          class="form"
+          action="https://formspree.io/f/mnngqjzn"
+          method="POST"
+        >
+          <div class="campo-form">
+            <label for="email"> Correo:</label>
+            <input id="email" type="email" name="email" />
+          </div>
+
+          <div class="campo-form">
+            <label for="mensaje"> Mensaje:</label>
+            <textarea id="mensaje" name="message"></textarea>
+          </div>
+
+          <!-- Asunto del mail que te llega -->
+          <input type="hidden" name="subject" value="Contacto desde el sitio" />
+
+          <!-- Boton de enviar -->
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      
+      <nav>
+        <ul>
+            <!-- Los logos de redes sociales todavía no tienen link a redes sociales ya que el store es ficticio -->
+          <li><a href="https://www.instagram.com/julioadriantapia" target="_blank" rel="noopener noreferrer"><img src="../images/instagram.png" alt="Logo de instagram" class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Imagen+no+disponible';"></a></li>
+          <li><img src="../images/facebook.png" alt="Logo de facebook" class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Imagen+no+disponible';"></li>
+          <li><img src="../images/x.png" alt="Logo de X" class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Imagen+no+disponible';"></li>
+          <li><img src="../images/whatsapp.png" alt="Logo de Whatsapp" class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Imagen+no+disponible';"></li>
+        </ul>
+      </nav>
+      <p>&copy; 2025 GlasStore. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
