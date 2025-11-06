@@ -1,9 +1,9 @@
 // ⚠️ Detalle: rutas ABSOLUTAS ya que ahora se usaran desde 2 HTML en distintas ubicaciones
 export const productos = [
-  { id: "1", nombre: "Ray-Ban Aviador 3025", img: "/images/1.png", precio: 1180000 },
-  { id: "2", nombre: "Ray-Ban Aviador 3026", img: "/images/6.png", precio: 1180000 },
-  { id: "3", nombre: "Oakley O9284", img: "/images/2.png", precio: 980000 },
-  { id: "4", nombre: "Vogue Eyewear 5462S", img: "/images/3.png", precio: 950000 },
-  { id: "5", nombre: "Vogue Eyewear 4233S", img: "/images/4.png", precio: 950000 },
-  { id: "6", nombre: "Vogue Eyewear 4198S", img: "/images/5.png", precio: 790000 }
+  { id: "1", nombre: "Ray-Ban Aviador 3025", img: "images/1.png", precio: 1180000 },
+  { id: "2", nombre: "Ray-Ban Aviador 3026", img: "images/6.png", precio: 1180000 },
+  { id: "3", nombre: "Oakley O9284", img: "images/2.png", precio: 980000 },
+  { id: "4", nombre: "Vogue Eyewear 5462S", img: "images/3.png", precio: 950000 },
+  { id: "5", nombre: "Vogue Eyewear 4233S", img: "images/4.png", precio: 950000 },
+  { id: "6", nombre: "Vogue Eyewear 4198S", img: "images/5.png", precio: 790000 }
 ];
