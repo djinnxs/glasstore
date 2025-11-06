@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__logo">
+        <a href="../index.html">GlasStore</a>
+      </p>
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="./carrito.html" class="carrito-icono">
+              🛒 <span id="contador-carrito">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Carrito de compras</h1>
+      <section id="contenedor-carrito">
+        <!-- Productos del carrito -->
+      </section>
+      <div class="acciones-carrito" id="acciones-carrito">
+        <!-- Botones de eliminar y finalizar compra se agregan desde JS -->
+      </div>
+      <section id="resumen-carrito">
+        <!-- Aca ira el resumen del carrito -->
+      </section>
+    </main>
+     <footer class="footer">
+      
+      <nav>
+        <ul>
+            <!-- Los logos de redes sociales todavía no tienen link a redes sociales ya que el store es ficticio -->
+          <li><a href="https://www.instagram.com/julioadriantapia" target="_blank" rel="noopener noreferrer"><img src="../images/instagram.png" alt="Logo de instagram" class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Imagen+no+disponible';"></a></li>
+          <li><img src="../images/facebook.png" alt="Logo de facebook" class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Imagen+no+disponible';"></li>
+          <li><img src="../images/x.png" alt="Logo de X" class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Imagen+no+disponible';"></li>
+          <li><img src="../images/whatsapp.png" alt="Logo de Whatsapp" class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Imagen+no+disponible';"></li>
+        </ul>
+      </nav>
+      <p>&copy; 2025 GlasStore. Todos los derechos reservados.</p>
+    </footer>
+    <script type="module" src="../js/carrito.js"></script>
+  </body>
+</html>

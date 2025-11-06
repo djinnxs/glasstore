@@ -13,6 +13,11 @@ html {
   font-size: 62.5%;
 }
 
+/* Asegura el color de fondo del documento (override de estilos inesperados) */
+html, body {
+  background-color: #F5F7FA !important;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
@@ -91,6 +96,38 @@ h1, h2, h3 {
 .footer nav ul li img {
   width: 24px;
   height: 24px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              👉Nuevo: BOTONES                              */
+/* -------------------------------------------------------------------------- */
+.btn {
+  background-color: #090979;
+  color: #e5e6e8;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #4C4CAD;
+}
+
+.btn-eliminar-carrito {
+  background-color: #1d1a20;
+  border: 2px solid #090979;
+}
+.btn-vaciar-carrito {
+  background-color: #FC0000;
+  color: #FFFFFF;
+}
+.btn-vaciar-carrito:hover {
+  background-color: #F52A2A;
 }
 
 /* HOME */
@@ -210,7 +247,21 @@ main .parrafo-home {
   cursor: pointer;
 }
 
-/* Media queries */
+/* -------------------------------------------------------------------------- */
+/*                              👉Nuevo: Carrito                              */
+/* -------------------------------------------------------------------------- */
+.mensaje-carrito-vacio {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.acciones-carrito {
+  margin-top: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                media queries                               */
+/* -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .header {
     display: flex;
@@ -231,7 +282,6 @@ main .parrafo-home {
   .tarjeta-producto {
     width: 80%;
   }
-
   .form {
     width: 80%;
     min-width: 400px;

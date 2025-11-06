@@ -22,6 +22,10 @@
             <!-- lo anulo con # porque no tengo pagina aun, es solo provisorio -->
             <a href="./pages/contacto.html">Contacto</a>
           </li>
+          <li>
+            <a href="./pages/carrito.html" class="carrito-icono">
+              🛒 <span id="contador-carrito">0</span>
+            </a>
         </ul>
       </nav>
     </header>
@@ -41,42 +45,9 @@
       <section class="productos-home">
         <h2>Algunos de nuestros productos</h2>
 
-        <div class="contenedor-tarjetas">
-          <article class="tarjeta-producto">
-            <img src="./images/1.png" alt="Lentes de sol Ray-Ban Aviador 3025" />
-            <h3>Ray-Ban Aviador 3025</h3>
-            <p>Precio: $1.180.000</p>
-          </article>
+      <div id="contenedor-tarjetas" class="contenedor-tarjetas"></div>
 
-          <article class="tarjeta-producto">
-            <img src="./images/6.png" alt="Lentes de sol Ray-Ban Aviador 3026" />
-            <h3>Ray-Ban Aviador 3026</h3>
-            <p>Precio: $1.180.000</p>
-          </article>
-
-          <article class="tarjeta-producto">
-            <img src="./images/2.png" alt="Lentes de sol Oakley O9284" />
-            <h3>Oakley O9284</h3>
-            <p>Precio: $980.000</p>
-          </article>
-
-          <article class="tarjeta-producto">
-            <img src="./images/3.png" alt="Lentes de sol Vogue Eyewear VO5462S" />
-            <h3>Vogue Eyewear 5462S</h3>
-            <p>Precio: $950.000</p>
-          </article>
-
-          <article class="tarjeta-producto">
-            <img src="./images/4.png" alt="Lentes de sol Vogue Eyewear VO4233S" />
-            <h3>Vogue Eyewear 4233S</h3>
-            <p>Precio: $950.000</p>
-          </article>
-
-          <article class="tarjeta-producto">
-            <img src="./images/5.png" alt="Lentes de sol Vogue Eyewear 4198S" />
-            <h3>Vogue Eyewear 4198S</h3>
-            <p>Precio: $790.000</p>
-          </article>
+        
         </div>
       </section>
     </main>
@@ -93,5 +64,7 @@
       </nav>
       <p>&copy; 2025 GlasStore. Todos los derechos reservados.</p>
     </footer>
+    <!-- Enlazo el js antes del ciere del body -->
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
