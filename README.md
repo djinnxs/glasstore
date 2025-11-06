@@ -17,6 +17,8 @@ Git y GitHub: Para el control de versiones y alojamiento del código.
 
 Estructura del Proyecto
 GlasStore/
+Estructura del Proyecto
+GlasStore/
 ├── css/
 │   └── style.css       # Archivo de estilos CSS
 ├── images/
@@ -26,12 +28,20 @@ GlasStore/
 │   ├── 4.png           # Imagen de producto Vogue Eyewear VO4233S
 │   ├── 5.png           # Imagen de producto Vogue Eyewear 4198S
 │   ├── 6.png           # Imagen de producto Ray-Ban Aviador 3026
-│   ├── instagram.png    # Icono de Instagram
-│   ├── facebook.png     # Icono de Facebook
+│   ├── instagram.png   # Icono de Instagram
+│   ├── facebook.png    # Icono de Facebook
 │   ├── x.png           # Icono de X
 │   └── whatsapp.png    # Icono de WhatsApp
+├── js/
+│   ├── index.js            # Lógica del home / módulo principal
+│   ├── productos.js        # Datos o funciones relacionadas con productos
+│   ├── carrito.js          # Lógica del carrito (eventos, render)
+│   ├── funcionesCarrito.js # Funciones auxiliares del carrito
+│   ├── storage.js          # Manejo de localStorage/sessionStorage
+│   └── ui.js               # Funciones de UI (renderizado, helpers)
 ├── pages/
-│   └── contacto.html   # Página de contacto (en desarrollo)
+│   ├── carrito.html    # Página del carrito
+│   └── contacto.html   # Página de contacto
 ├── index.html          # Página principal
 └── README.md           # Este archivo
 
