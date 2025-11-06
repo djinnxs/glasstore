@@ -19,6 +19,12 @@ Estructura del Proyecto
 GlasStore/
 Estructura del Proyecto
 GlasStore/
+## Estructura del Proyecto
+
+Para una visualización fiable en GitHub y en otros visores Markdown, la estructura del proyecto se muestra a continuación dentro de un bloque de código (sin que se pierdan saltos de línea):
+
+```
+GlasStore/
 ├── css/
 │   └── style.css       # Archivo de estilos CSS
 ├── images/
@@ -44,6 +50,7 @@ GlasStore/
 │   └── contacto.html   # Página de contacto
 ├── index.html          # Página principal
 └── README.md           # Este archivo
+```
 
 Instalación y Ejecución
 
