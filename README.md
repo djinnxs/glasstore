@@ -27,6 +27,8 @@ Para una visualización fiable en GitHub y en otros visores Markdown, la estruct
 GlasStore/
 ├── css/
 │   └── style.css       # Archivo de estilos CSS
+├── data/
+│   └── productos.json       # Archivos de productos
 ├── images/
 │   ├── 1.png           # Imagen de producto Ray-Ban Aviador 3025
 │   ├── 2.png           # Imagen de producto Oakley O9284
@@ -40,7 +42,6 @@ GlasStore/
 │   └── whatsapp.png    # Icono de WhatsApp
 ├── js/
 │   ├── index.js            # Lógica del home / módulo principal
-│   ├── productos.js        # Datos o funciones relacionadas con productos
 │   ├── carrito.js          # Lógica del carrito (eventos, render)
 │   ├── funcionesCarrito.js # Funciones auxiliares del carrito
 │   ├── storage.js          # Manejo de localStorage/sessionStorage

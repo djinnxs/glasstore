@@ -13,11 +13,6 @@ html {
   font-size: 62.5%;
 }
 
-/* Asegura el color de fondo del documento (override de estilos inesperados) */
-html, body {
-  background-color: #F5F7FA !important;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
