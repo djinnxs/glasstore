@@ -37,3 +37,9 @@ export const vaciarCarrito = () => {
   actualizarContador([]);
   mostrarMensaje("Carrito vaciado");
 };
+
+// Calcula el total de los productos en el carrito
+export const calcularTotal = (productos) => {
+  if (!productos || !productos.length) return 0;
+  return productos.reduce((acc, p) => acc + (p.precio || 0), 0);
+};

@@ -1,5 +1,5 @@
 import { obtenerCarrito } from "./storage.js";
-import { eliminarProducto, vaciarCarrito } from "./funcionesCarrito.js";
+import { eliminarProducto, vaciarCarrito, calcularTotal } from "./funcionesCarrito.js";
 import { actualizarContador } from "./ui.js";
 
 const renderizarCarrito = () => {
@@ -62,6 +62,12 @@ const renderizarCarrito = () => {
 
     contenedor.appendChild(tarjeta);
   });
+  // Mostrar total
+  const total = calcularTotal(carrito);
+  const totalNodo = document.createElement("p");
+  totalNodo.classList.add("total-carrito");
+  totalNodo.textContent = `Total: $${total.toLocaleString("es-CO")}`;
+  divAcciones.appendChild(totalNodo);
 
   const btnVaciar = document.createElement("button");
   btnVaciar.classList.add("btn");
