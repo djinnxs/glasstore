@@ -15,6 +15,8 @@ const renderizarCarrito = () => {
   //Esta lineas limpian los contenedor antes de renderizar tarjetas y botones
   contenedor.innerHTML = "";
   divAcciones.innerHTML = "";
+  const resumen = document.getElementById("resumen-carrito");
+  if (resumen) resumen.innerHTML = "";
 
   //❌Si no hay productos en el carrito mostramos un mensaje
   if (!carrito.length) {
@@ -22,6 +24,13 @@ const renderizarCarrito = () => {
     mensaje.classList.add("mensaje-carrito-vacio");
     mensaje.textContent = "No hay productos en el carrito";
     contenedor.appendChild(mensaje);
+    // Mostrar total 0 en el resumen si existe
+    if (resumen) {
+      const totalNodo = document.createElement("p");
+      totalNodo.classList.add("total-carrito");
+      totalNodo.textContent = `Total: $0`;
+      resumen.appendChild(totalNodo);
+    }
     return; //⚠️salimos de la funcion para no intentar renderizar productos
   }
 
@@ -62,12 +71,16 @@ const renderizarCarrito = () => {
 
     contenedor.appendChild(tarjeta);
   });
-  // Mostrar total
+  // Mostrar total (preferir la sección resumen si existe)
   const total = calcularTotal(carrito);
   const totalNodo = document.createElement("p");
   totalNodo.classList.add("total-carrito");
   totalNodo.textContent = `Total: $${total.toLocaleString("es-CO")}`;
-  divAcciones.appendChild(totalNodo);
+  if (resumen) {
+    resumen.appendChild(totalNodo);
+  } else {
+    divAcciones.appendChild(totalNodo);
+  }
 
   const btnVaciar = document.createElement("button");
   btnVaciar.classList.add("btn");
