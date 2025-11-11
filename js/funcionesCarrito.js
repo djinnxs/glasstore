@@ -32,6 +32,7 @@ export const eliminarProducto = (indice) => {
   mostrarMensaje("Producto eliminado");
 };
 
+// Vaciar el carrito
 export const vaciarCarrito = () => {
   vaciarCarritoStorage();
   actualizarContador([]);
